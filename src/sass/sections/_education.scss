@@ -1,0 +1,56 @@
+// Education Section Styles
+#education {
+  background: $white-color;
+  padding: 5rem 0;
+  
+  .education-box {
+    padding: 2.5rem 2rem;
+    min-height: 220px;
+    font-size: 1.15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $white-color;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .education-box img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 15px;
+    object-fit: contain;
+  }
+  
+  .education-box strong {
+    font-size: 1.5rem;
+  }
+  
+  .education-box ul {
+    margin-top: 8px;
+    font-size: 1.2em;
+    list-style-position: outside;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+  }
+  
+  .education-box li {
+    padding-bottom: 0.8em;
+  }
+  
+  @media (max-width: 600px) {
+    .education-box {
+      padding: 1rem;
+      font-size: 0.95em;
+      min-height: 130px;
+    }
+    
+    .education-box img {
+      width: 40px !important;
+      height: 40px !important;
+      margin-right: 10px !important;
+    }
+  }
+}

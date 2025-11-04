@@ -1,0 +1,190 @@
+#contact {
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  padding: 15rem 0 10rem 0;
+  margin-top: -10rem;
+  margin-bottom: -1px;
+  color: $white-color;
+
+  // Reduce spacing between the section title and the following h3
+  .section-title {
+    margin-bottom: 0.6rem;
+  }
+  .section-title + h3 {
+    margin-top: 0.2rem;
+  }
+
+  // Contact form card styles
+  .contact-form {
+    max-width: 460px; // compact card width
+    width: 460px; // keep compact on desktop
+    margin: 24px 0 0; // align to left inside container
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    // On phones, allow full width
+    @include respond(phone) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    label {
+      display: block;
+      font-size: 1.6rem;
+      margin-top: 12px;
+      color: $white-color;
+      text-align: left; // ensure labels are left-aligned
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 6px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(0, 0, 0, 0.25);
+      color: $white-color;
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+
+    textarea {
+      min-height: 140px; // increase message box size
+      resize: vertical;
+    }
+
+    button[type="submit"] {
+      display: block;
+      width: 100%; // full-width button like the mock
+    }
+  }
+
+  @include respond(tab-land) {
+    padding: 10rem 0;
+    clip-path: none;
+    margin-top: 0;
+    -webkit-clip-path: none;
+  }
+
+  .contact-wrapper {
+    margin-top: 3.2rem;
+    padding: 0 2rem;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3.2rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+
+    &__text {
+      margin-bottom: 2.5rem;
+    }
+
+    &__text,
+    a {
+      font-size: 2.4rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // Right side social card
+  .contact-social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    @include respond(phone) {
+      justify-content: stretch;
+    }
+  }
+
+  .social-card {
+    width: 100%;
+    max-width: 560px;
+    padding: 20px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(6px);
+    margin: 24px 0 0; // align top edge with form card
+
+    &__title {
+      font-size: 2rem; // smaller section title
+      font-weight: 700; // bold title
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 12px 0;
+
+      .accent {
+        display: inline-block;
+        width: 36px;
+        height: 4px;
+        border-radius: 4px;
+        background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: flex-start; // align icon/text to top
+      gap: 16px;
+      padding: 18px;
+      margin-top: 16px;
+      border-radius: 14px;
+      background: rgba(0,0,0,0.18);
+      border: 1px solid rgba(255,255,255,0.16);
+      text-decoration: none;
+      color: $white-color;
+      transition: transform 0.2s ease, background 0.2s ease;
+
+      &:hover { transform: translateY(-2px); background: rgba(0,0,0,0.24); }
+
+      .social-card__icon {
+        display: grid;
+        place-items: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 12px;
+        background: rgba(0,0,0,0.25);
+        font-size: 2.4rem;
+      }
+
+      .social-card__text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+
+        .t1 { font-size: 1.8rem; font-weight: 700; } // reduced title size
+        .t2 { font-size: 1.6rem; opacity: 0.85; margin-top: 6px; }
+      }
+    }
+
+    // slight color hints per network
+    &__item.linkedin .social-card__icon { background: rgba(14,118,168,0.3); }
+    &__item.instagram .social-card__icon { background: rgba(193,53,132,0.3); }
+    &__item.github .social-card__icon { background: rgba(255,255,255,0.18); }
+    &__item.github { align-items: center; }
+    &__item.instagram { align-items: center; }
+  }
+}

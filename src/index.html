@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <!-- Todo: put here your site title -->
+    <title>M Hassan | Portfolio</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+    <!-- Todo: remove the below script once you finish your portfolio -->
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+  </head>
+
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+  <body>
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Hi, I'm <span class="text-color-main">Muhammad Hassan</span>
+          <br />
+          <span class='auto-type'></span>
+        </h1>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('.auto-type', {
+              strings : ["AI Full Stack Developer","Backend Developer","Computer Engineer"],
+              typeSpeed: 100,
+              backSpeed: 150, 
+              loop: true
+            })
+        </script>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >Know more</a
+          >
+        </p>
+      </div>
+    </section>
+   
+    <!-- /END Hero Section -->
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/Profile.png"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                Tech enthusiast building the future with code and curiosity.
+                I turn complex problems into elegant solutions.
+                Eager to contribute to innovative projects that blend AI, automation, and real-world impact.
+              </p>
+              <p class="about-wrapper__info-text">
+                Outside of tech, I enjoy exploring new ideas, 
+                reading about emerging technologies, and contributing to open-source projects.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/Muhammad Hassan - Resume.pdf"
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">AI-Powered Attendance System</h3>
+                <div>
+                  <p class="mb-4">
+                    Revolutionizing attendance tracking, I developed an advanced Face Recognition Attendance System. 
+                    This cutting-edge solution harnesses YOLOv8 for lightning-fast, accurate face detection in real-time.
+                    Once detected, a unique numerical "embedding" is generated from each face, representing its distinct features.
+                    This embedding is then instantly compared against a robust database of pre-registered user embeddings.
+                    If a precise match is found, the individual is swiftly identified, and their attendance is seamlessly recorded. 
+                    My proactive approach ensured the integration of complex models, optimizing for unparalleled real-time accuracy and robust identification, guaranteeing reliable attendance tracking. 
+                    This project profoundly reinforced my skills in Computer Vision, Machine Learning, Python, and efficient data management.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
+                    alt="Attendace System Image"
+                    class="img-fluid"
+                    src="assets/Attendance_System.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Smart Waste Segregation Robot</h3>
+                <div>
+                  <p class="mb-4">
+                    Manual trash collection is inefficient, hazardous, and not scalable for large public or industrial spaces. 
+                    To solve this, I developed an autonomous UGV that detects, collects, and sorts trash without human intervention. 
+                    The system uses a YOLOv8 model (trained via Roboflow) and an OAK-D camera for real-time trash detection and depth perception.
+                    I designed and 3D-printed a 5-DOF robotic arm for picking and binning waste, and integrated ESP32-controlled DC motors for movement. 
+                    Using Raspberry Pi and ROS, I coordinated all components for perception, control, and navigation. 
+                    This solution reduces human exposure to waste, increases collection efficiency, and enables smart, scalable waste management.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
+                    alt="Project Image"
+                    class="img-fluid"
+                    src="assets/Trash Robot.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Realtime Voice Chatbot</h3>
+                <div>
+                  <p class="mb-4">
+                    This AI Voice Chatbot is a sophisticated real-time communication system designed for seamless, natural conversations.
+                    It intelligently captures user voice input in dynamic chunks, delineated by pauses in speech, which are then processed by OpenAI's Whisper for highly accurate Speech-to-Text (STT) transcription.
+                    The resulting text is fed to a ChatGPT API, generating an AI-powered conversational response to the user's query. 
+                    This AI-generated text is then transformed back into natural-sounding speech using Eleven Labs' advanced Text-to-Speech (TTS) capabilities. 
+                    The entire robust architecture is hosted on a FastAPI server, ensuring efficient and scalable operations, while the user interaction and voice transmission are managed via an Asterisk server, providing a complete, integrated voice chatbot experience.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
+                    alt="Project Image"
+                    class="img-fluid"
+                    src="assets/chatbot.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+    
+    <!-- **** Expereince Section **** -->
+    <section id="experience">
+      <div class="container">
+        <div class="Experience">
+          <h2 class="section-title dark-blue-text">Work Experience</h2>
+          <div class="row mt-4">
+            <div class="col-sm-12 col-md-4 mb-3">
+              <div class="experience-box bg-white p-4 h-100 shadow rounded">
+                <div class="row g-0 align-items-start">
+                  <div class="col-auto">
+                    <img src="assets/lancers_logo.png" alt="Lancers Logo" style="width:50px; height:56px; object-fit:contain;">
+                  </div>
+                  <div class="col" style="padding-left: 0; margin-left: 0; text-align: left;">
+                    <div style="margin-left: 0; padding-left: 0; text-align: left;">
+                      <div><strong style="font-size: 1.5rem;">Lancers.dev</strong></div>
+                      <div style="font-size:1.2em;">Backend Developer | Part Time</div>
+                      <div style="font-size:1em; color:#666;">Dec 2024 – July 2025 | Rawalpindi, Pakistan</div>
+                      <ul style="margin-top:8px; font-size:1.2em; list-style-position:outside; padding-left:0; margin-left:0; text-align: left;">
+                        <li>Developed backend for the "Amanat" app using Node.js, integrated MySQL, and implemented AI/ML workflows in Flask.</li>
+                        <li>Optimized app performance with backend improvements and ensured smooth integration with the Flutter frontend.</li>
+                        <li>Led QA efforts, including unit, integration, and API testing.</li>
+                        <li>Utilized Docker for containerization, Git for version control, and contributed to agile development processes.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-4 mb-3">
+              <div class="experience-box bg-white p-4 h-100 shadow rounded">
+                <div class="row g-0 align-items-start">
+                  <div class="col-auto">
+                    <img src="assets/techgis_logo.png" alt="TechGIS Logo" style="width:50px; height:70px; object-fit:contain;">
+                  </div>
+                  <div class="col" style="padding-left: 0; margin-left: 0; text-align: left;">
+                    <div style="margin-left: 0; padding-left: 0; text-align: left;">
+                      <div><strong style="font-size: 1.5rem;">TechGIS</strong></div>
+                      <div style="font-size:1.2em;">AI Full Stack Developer | Full Time</div>
+                      <div style="font-size:1em; color:#666;">July 2025 - Nov 2025 | Islamabad, Pakistan</div>
+                      <ul style="margin-top:8px; font-size:1.2em; list-style-position:outside; padding-left:0; margin-left:0; text-align: left;">
+                        <li>Developed Voice AI Chatbot using Whisper, Gemini API, and ElevenLabs API for real-time voice interaction.</li>
+                        <li>Created an Urdu Dubbing Model for automatic movie dubbing and language translation.</li>
+                        <li>Designed a real-time GIS dashboard for telecom data monitoring with predictive analytics and coverage visualization.</li>
+                        <li>Applied AI frameworks and automation to optimize web design and enhance client engagement.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-3">
+              <div class="experience-box bg-white p-4 h-100 shadow rounded">
+                <div class="row g-0 align-items-start">
+                  <div class="col-auto">
+                    <img src="assets/nescom_logo.png" alt="nescom Logo" style="width:50px; height:56px; object-fit:contain;">
+                  </div>
+                  <div class="col" style="padding-left: 0; margin-left: 0; text-align: left;">
+                    <div style="margin-left: 0; padding-left: 0; text-align: left;">
+                      <div><strong style="font-size: 1.5rem;">NESCOM</strong></div>
+                      <div style="font-size:1.2em;">Robotics Engineer | Internship </div>
+                      <div style="font-size:1em; color:#666;">July 2024 – Sep 2025 | Islamabad, Pakistan</div>
+                      <ul style="margin-top:8px; font-size:1.2em; list-style-position:outside; padding-left:0; margin-left:0; text-align: left;">
+                        <li>Developed AI-based solutions for automated systems, including a face detection attendance system using YOLO and OpenCV.</li>
+                        <li>Implemented SLAM algorithms (Hector SLAM) for real-time 2D mapping and robotic localization with RP LiDAR.</li>
+                        <li>Designed and 3D-printed components for a 5-DOF robotic arm, and simulated motion control using ROS and Python.</li>
+                        <li>Worked on edge devices like Raspberry Pi and NVIDIA Jetson Nano, deploying AI/ML models for real-time computer vision applications.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Experience Section -->
+
+    <!-- **** Education Section **** -->
+    <section id="education">
+      <div class="container">
+        <div class="Education">
+          <h2 class="section-title dark-blue-text">Education</h2>
+          <div class="row mt-4">
+            <div class="col-sm-12 mb-3">
+              <div class="education-box bg-white p-4 h-100 shadow rounded">
+                <div class="row g-0 align-items-start">
+                  <div class="col-auto">
+                    <img src="assets/nutech_logo.png" alt="University Logo" style="width:100px; height:100px; object-fit:contain;">
+                  </div>
+                  <div class="col" style="padding-left: 20px; margin-left: 0; padding-top: 10px;">
+                    <div style="margin-left:0; padding-left: 0px; text-align: left;">
+                      <div><strong style="font-size: 1.8rem; line-height: 1.3; margin-top: 5px;">National University of Technology - NUTECH</strong></div>
+                      <div style="font-size:1.6em; line-height: 1.4; margin-top: 8px;">Bachelor of Engineering in Computer Engineering</div>
+                      <div style="font-size:1.3em; color:#666; line-height: 1.4; margin-top: 8px;">2022 - 2026 | Islamabad, Pakistan</div>
+                      <ul style="margin-top:20px; font-size:1.4em; list-style-position:outside; padding-left:0; margin-left:0; text-align: left; line-height: 1.6;">
+                        <li><strong>Award:</strong> Best ICAT Project (University Level).</li>
+                        <li><strong>FYP:</strong> Automatic Fabric Inspection using Computer Vision.</li>
+                        <li><strong>Vice Technical Manager:</strong> Google Crowdsource & ML Community, NUTECH Chapter</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 mb-3">
+              <div class="education-box bg-white p-4 h-100 shadow rounded">
+                <div class="row g-0 align-items-start">
+                  <div class="col-auto">
+                    <img src="assets/college_logo.png" alt="College Logo" style="width:100px; height:100px; object-fit:contain;">
+                  </div>
+                  <div class="col" style="padding-left: 20px; margin-left: 0; padding-top: 10px;">
+                    <div style="margin-left:0; padding-left: 0px; text-align: left;">
+                      <div><strong style="font-size: 1.8rem; line-height: 1.3; margin-top: 5px;">Concepts College of Sciences</strong></div>
+                      <div style="font-size:1.6em; line-height: 1.4; margin-top: 8px;">FSC - Pre Engineering</div>
+                      <div style="font-size:1.3em; color:#666; line-height: 1.4; margin-top: 8px;">2019 - 2021 | Rawalpindi, Pakistan</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Education Section -->
+    <!-- **** Skills Section **** -->
+    <section id="skills">
+      <div class="container">
+        <div class="Skills">
+          <h2 class="section-title dark-blue-text">MY TECH STACK</h2>
+          <div class="skills-marquee">
+            <div class="marquee-row">
+              <div class="track">
+                <div class="group">
+                  <div class="skill-item"><img src="assets/python.png" alt="Python Logo"><span>Python</span></div>
+                  <div class="skill-item"><img src="assets/js.png" alt="JavaScript Logo"><span>JavaScript</span></div>
+                  <div class="skill-item"><img src="assets/typescript.png" alt="TypeScript Logo"><span>TypeScript</span></div>
+                  <div class="skill-item"><img src="assets/html.png" alt="HTML Logo"><span>HTML</span></div>
+                  <div class="skill-item"><img src="assets/CSS.png" alt="CSS Logo"><span>CSS</span></div>
+                  <div class="skill-item"><img src="assets/c-.png" alt="C++ Logo"><span>C++</span></div>
+                  <div class="skill-item"><img src="assets/C.png" alt="C Logo"><span>C</span></div>
+                  <div class="skill-item"><img src="assets/ardiuno.png" alt="Arduino Logo"><span>Ardiuno</span></div>
+                  <div class="skill-item"><img src="assets/Django.png" alt="Django Logo"><span>Django</span></div>
+                  <div class="skill-item"><img src="assets/fastapi.png" alt="fastapi Logo"><span>FastAPI</span></div>
+                  <div class="skill-item"><img src="assets/flask.png" alt="flask Logo"><span>Flask</span></div>
+                </div>
+                <div class="group">
+                  <div class="skill-item"><img src="assets/python.png" alt="Python Logo"><span>Python</span></div>
+                  <div class="skill-item"><img src="assets/js.png" alt="JavaScript Logo"><span>JavaScript</span></div>
+                  <div class="skill-item"><img src="assets/typescript.png" alt="TypeScript Logo"><span>TypeScript</span></div>
+                  <div class="skill-item"><img src="assets/html.png" alt="HTML Logo"><span>HTML</span></div>
+                  <div class="skill-item"><img src="assets/CSS.png" alt="CSS Logo"><span>CSS</span></div>
+                  <div class="skill-item"><img src="assets/c-.png" alt="C++ Logo"><span>C++</span></div>
+                  <div class="skill-item"><img src="assets/C.png" alt="C Logo"><span>C</span></div>
+                  <div class="skill-item"><img src="assets/ardiuno.png" alt="Arduino Logo"><span>Ardiuno</span></div>
+                  <div class="skill-item"><img src="assets/Django.png" alt="Django Logo"><span>Django</span></div>
+                  <div class="skill-item"><img src="assets/fastapi.png" alt="fastapi Logo"><span>FastAPI</span></div>
+                  <div class="skill-item"><img src="assets/flask.png" alt="flask Logo"><span>Flask</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="marquee-row reverse">
+              <div class="track">
+                <div class="group">
+                  <div class="skill-item"><img src="assets/node js.jpeg" alt="Node.js Logo"><span>Node.js</span></div>
+                  <div class="skill-item"><img src="assets/express.png" alt="Express Logo"><span>Express.js</span></div>
+                  <div class="skill-item"><img src="assets/nextjs.png" alt="Next.js Logo"><span>NextJS</span></div>
+                  <div class="skill-item"><img src="assets/react.png" alt="React Logo"><span>React</span></div>
+                  <div class="skill-item"><img src="assets/angular.png" alt="Angular Logo"><span>Angular</span></div>
+                  <div class="skill-item"><img src="assets/mysql.png" alt="MySQL Logo"><span>MySQL</span></div>
+                  <div class="skill-item"><img src="assets/postgreSQl.png" alt="PostgreSQL Logo"><span>PostgreSQL</span></div>
+                  <div class="skill-item"><img src="assets/mongoDB.png" alt="MongoDB Logo"><span>MongoDB</span></div>
+                  <div class="skill-item"><img src="assets/redis.png" alt="Redis Logo"><span>Redis</span></div>
+                  <div class="skill-item"><img src="assets/git.png" alt="Git Logo"><span>Git</span></div>
+                  <div class="skill-item"><img src="assets/docker.png" alt="Docker Logo"><span>Docker</span></div>
+                  <div class="skill-item"><img src="assets/AWs.png" alt="AWS Logo"><span>AWS</span></div>
+                  <div class="skill-item"><img src="assets/postman.png" alt="Postman Logo"><span>Postman</span></div>
+                </div>
+                <div class="group">
+                  <div class="skill-item"><img src="assets/node js.jpeg" alt="Node.js Logo"><span>Node.js</span></div>
+                  <div class="skill-item"><img src="assets/express.png" alt="Express Logo"><span>Express.js</span></div>
+                  <div class="skill-item"><img src="assets/nextjs.png" alt="Next.js Logo"><span>NextJS</span></div>
+                  <div class="skill-item"><img src="assets/react.png" alt="React Logo"><span>React</span></div>
+                  <div class="skill-item"><img src="assets/angular.png" alt="Angular Logo"><span>Angular</span></div>
+                  <div class="skill-item"><img src="assets/mysql.png" alt="MySQL Logo"><span>MySQL</span></div>
+                  <div class="skill-item"><img src="assets/postgreSQl.png" alt="PostgreSQL Logo"><span>PostgreSQL</span></div>
+                  <div class="skill-item"><img src="assets/mongoDB.png" alt="MongoDB Logo"><span>MongoDB</span></div>
+                  <div class="skill-item"><img src="assets/redis.png" alt="Redis Logo"><span>Redis</span></div>
+                  <div class="skill-item"><img src="assets/git.png" alt="Git Logo"><span>Git</span></div>
+                  <div class="skill-item"><img src="assets/docker.png" alt="Docker Logo"><span>Docker</span></div>
+                  <div class="skill-item"><img src="assets/AWs.png" alt="AWS Logo"><span>AWS</span></div>
+                  <div class="skill-item"><img src="assets/postman.png" alt="Postman Logo"><span>Postman</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Skills Section -->
+    <!-- **** Contact Section **** -->
+    <section id="contact" style="margin-top: 120px;">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+  <h3>Have a question or want to work together? I'd love to hear from you.</h3>
+        <div class="contact-wrapper load-hidden">
+          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form" style="text-align: left;">
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display:none">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+
+            <label for="name"><strong>Name</strong></label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+
+            <label for="email" style="margin-top:12px;"><strong>Email</strong></label>
+            <input id="email" name="email" type="email" placeholder="your.email@example.com" required />
+
+            <label for="subject" style="margin-top:12px;"><strong>Subject</strong></label>
+            <input id="subject" name="subject" type="text" placeholder="What's this about?" />
+
+            <label for="message" style="margin-top:12px;"><strong>Message</strong></label>
+            <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+
+            <button type="submit" class="cta-btn cta-btn--resume" style="margin-top:16px;">Submit</button>
+          </form>
+
+          <aside class="contact-social">
+            <div class="social-card">
+              <h3 class="social-card__title"><span class="accent"></span> Connect With Me</h3>
+
+              <a class="social-card__item linkedin" rel="noreferrer" href="https://www.linkedin.com/in/muhammad-hassan-464637253/" target="_blank">
+                <span class="social-card__icon"><i class="fa fa-linkedin"></i></span>
+                <span class="social-card__text">
+                  <span class="t1">Let's Connect</span>
+                  <span class="t2">on LinkedIn</span>
+                </span>
+              </a>
+
+              <a class="social-card__item github" rel="noreferrer" href="https://github.com/HASSANENGI" target="_blank">
+                <span class="social-card__icon"><i class="fa fa-github"></i></span>
+                <span class="social-card__text">
+                  <span class="t1">Github</span>
+                </span>
+              </a>
+
+              <a class="social-card__item instagram" rel="noreferrer" href="#" target="_blank">
+                <span class="social-card__icon"><i class="fa fa-instagram"></i></span>
+                <span class="social-card__text">
+                  <span class="t1">Instagram</span>
+                </span>
+              </a>
+              
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom" style="padding: 0; padding-bottom: 8px;">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; min-height: auto; padding-top: 8px;">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <p class="footer__text">
+          Copyright © 2025 Muhammad Hassan - All rights reserved.
+        </p>
+
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>
