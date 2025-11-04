@@ -59,14 +59,7 @@ $ yarn start
 npm install --unsafe-perm=true --allow-root
 ```
 
-Once your server has started, go to this url `http://localhost:1234/` to see the portfolio locally. It should look like the below screenshot.
-
-
-## Deployment 📦
-
-Once you finish your setup. You need to put your website online!
-
-I highly recommend to use [Netlify](https://netlify.com) because it is super easy.
+Once your server has started, go to this url `http://localhost:1234/` to see the portfolio locally.
 
 ## Technologies used 🛠️
 
